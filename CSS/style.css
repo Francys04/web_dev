@@ -1,0 +1,69 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+input+button {
+    color: blue;
+}
+
+
+#sign {
+    background-color: red;
+    color: green;
+}
+
+.login {
+    color: yellow;
+    background-color: blue;
+}
+
+.tag {
+    color: brown;
+    text-decoration: red underline;
+}
+
+li a {
+    color: red;
+}
+
+.spoon span {
+    color: green;
+    font-weight: 700;
+}
+
+footer>a {
+    color: blue;
+}
+
+
+input[type="password"] {
+    color: green;
+    text-align: center;
+}
+
+#butt:hover {
+    background-color: red;
+    color: white;
+}
+
+p span:hover {
+    text-decoration: black underline;
+}
+
+
+button:active {
+    background-color: blue;
+}
+
+.link a:active {
+    text-transform: capitalize;
+}
+
+h1 ::first-letter {
+    text-decoration: underline;
+}
+
+p ::selection {
+    background-color: red;
+}

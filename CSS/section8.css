@@ -1,0 +1,58 @@
+/* parrent font-size for em and rem units example */
+/* * {
+    font-size: 12px;
+} */
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: yellow;
+}
+
+button {
+    border-color: red;
+    margin-left: 40px;
+    border-radius: 30px;
+    font-size: 3em;
+}
+
+
+#one {
+    background-color: aqua;
+    border-width: 10px;
+    border-color: black;
+    border-style: dotted;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 0.9em;
+}
+
+#two {
+    background-color: green;
+    border-width: 15px;
+    border-color: blue;
+    border-style: dashed;
+    border-left: 16px solid;
+    border-left-color: aquamarine;
+}
+
+#three {
+    background-color: grey;
+    border: dashed 1px solid;
+    border-color: aquamarineS;
+    border-radius: 20%;
+    padding-top: 40px;
+    margin: 20px;
+}
+
+
+h4 {
+    border-color: grey solid 2px;
+    display: inline-block;
+    font-size: 2em
+}
+
+ul {
+    font-size: 4rem;
+}
