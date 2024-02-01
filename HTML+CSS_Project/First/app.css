@@ -1,7 +1,6 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
-
 
 body {
     background-color: aliceblue;
@@ -11,7 +10,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0;
 }
 
@@ -31,5 +30,18 @@ h1 {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 2px 4px 5px grey;
-    transform: translateX(200%)
+    transform: translateX(200px);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-200%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 45px;
 }

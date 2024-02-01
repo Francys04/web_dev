@@ -1,0 +1,266 @@
+/* set reset to 0 all elements, border-box mentain hight of element not affect these */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* custom property with variable */
+:root {
+    --primary-color: #4891ff;
+    --light-color: aquamarine;
+    --dark-color: black;
+}
+
+body {
+    font-family: 'Popins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+/* NavBar */
+.navbar {
+    background-color: white;
+    padding: 20px;
+}
+
+/* flex row the direction with display prop */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* put side by side the li tag from ul tag */
+.navbar .main-menu ul {
+    display: flex;
+}
+
+/* set transition and put in blocks the li tags with anchor tag */
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+/* change color when get with cursor the anchor */
+.navbar ul li a:hover {
+    color: var(--primary-color)
+}
+
+/* set icon tag up over with 10px */
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+/* set last child list and put 10px between the log in button */
+.navbar ul li:last-child a {
+    margin-left: 10px
+}
+
+/* for hero with the text proprieties wich find them on bellow*/
+.hero {
+    margin-bottom: 50px;
+}
+
+/* image */
+.hero .container {
+    background: url('../second/images/hero-bg.png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .hero-content {
+    width: 70%;
+}
+
+.hero .hero-text {
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+/* Video set css */
+.video {
+    padding: 10px 0 40px;
+}
+
+.video-preview {
+    margin-bottom: 20px;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 40px;
+}
+
+.testimonials .testimonials-heading {
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+/* repeat 1fr by 3 times */
+.testimonials-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.testimonials .card p:nth-child(2) {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* pricing */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+
+
+
+
+/* Utilities Classes */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* card style */
+.card {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px 10px 10px;
+    border: space-between;
+}
+
+/* buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* change appereance of text in button */
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* change btn color */
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* text classes for hero */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* background color for video */
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-light {
+    background: var(--light-color);
+    color: #fff;
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-black {
+    background: black;
+    color: #fff;
+}
